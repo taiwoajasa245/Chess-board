@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chess Board</title>
+</head>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: repeat(9, 8fr);
+  border: 1px solid whitesmoke; 
+  
+} 
+
+.wrapper{ 
+  width: 100%;
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  background: #101010;
+}
+
+.wrapper > h1{
+  padding-bottom: 1em;
+  color: whitesmoke;
+  font-size: 40px;
+}
+
+.btn{
+  all: unset;
+  background: whitesmoke;
+  padding: .5em 3em; 
+  border-radius: 5px;
+  margin-top: 2em;
+  color: black;
+}
+
+.container > div{
+  background-color: black;
+  font-size: 15px;
+  padding: .8em;
+  
+}
+
+.container > div:nth-child(odd){
+  background: white; 
+ 
+}
+.play{
+  background: coral;
+}
+  
+  
+</style>
+
+<body>
+  <div class="wrapper">
+    
+    <h1> Chess Board♟️</h1>
+    
+    
+    <div class="container">
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box"> </div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box"></div>
+     <div class="box"> <span>♟️</span></div>
+     <div class="box"> </div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"> <span>♟️</span></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box"> <span>♟️</span></div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box"> </div>
+     <div class="box"> </div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     <div class="box">♟️</div>
+     
+    </div>
+    <button class="btn" >Play</button>
+  </div>
+</body>
+<script>
+ 
+ const btn = document.querySelector('.btn')
+ 
+ btn.addEventListener('click', () =>  {
+    const div = document.querySelector('.wrapper');
+    
+    div.classList.toggle('play')
+ });
+
+
+
+
+</script>
+</html>
